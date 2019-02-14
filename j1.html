@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #9ae5e7;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  background-color: #0c9df1;
+  border: solid 2px #c3c3c3;
+  display: none;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">Click to Show Profile</div>
+<div id="panel"> 
+    
+    <img src="im1.jpg" width="300" height="250"><br><br>
+    <h><font color="#d40d88">Naratip Thongtaluang Student ID: 5735512153</font> </h>
+    <p>Nickname: Keng      Bithday: 3 October 1995</p> 
+    <table style="width:100%">
+            <tr>
+              <th>Date</th>
+              <th>Subject</th> 
+            </tr>
+            <tr>
+              <td>Mon</td>
+              <td>Information System,Software Development</td>
+              
+            </tr>
+            <tr>
+              <td>Tue</td>
+              <td>Information System,Client,Microcontroller</td>
+            </tr>
+            <tr>
+              <td>Wend</td>
+              <td>Data Comunication</td>
+            </tr>
+            <tr>
+                    <td>Fri</td>
+                    <td>Microcontroller,Client,Software Development</td>
+                  </tr>
+          </table>
+   </div>
+
+</body>
+</html>
